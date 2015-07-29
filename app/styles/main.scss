@@ -5,6 +5,7 @@ $icon-font-path: '../fonts/';
 // endbower
 @import "bower_components/font-awesome/scss/font-awesome.scss";
 
+
 .browserupgrade {
   margin: 0.2em 0;
   background: #ccc;
@@ -82,7 +83,7 @@ h1, h2, h3, h4, h5{
   }
 
   a{
-    color: #bfc9d3;
+    color: #8c9dac;
     font-size: 14px;
     line-height: 20px;
   }
@@ -124,6 +125,9 @@ h1, h2, h3, h4, h5{
         border-radius: 4px;
         padding: 15px 32px;
         text-transform: uppercase;
+        .fa{
+          padding-left: 8px;
+        }
       }
     }
   }
@@ -135,6 +139,10 @@ h1, h2, h3, h4, h5{
     position: absolute;
     top: 0;
   }
+  .swiper-slide{
+    overflow: hidden;
+  }
+
   .slide-content{    
     color: #fff;
     padding-top: 150px;
@@ -282,26 +290,8 @@ h1, h2, h3, h4, h5{
   }
 }
 
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
-  .btn {
-    font-size: 21px;
-    padding: 14px 24px;
-  }
-}
-
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
-  p + h4 {
-    margin-top: 28px;
-  }
-}
-
 /* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
     width: 1200px;
@@ -320,8 +310,20 @@ h1, h2, h3, h4, h5{
     margin-bottom: 0;
   }
 
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
+  
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1200px) {
+  .container { 
+    width: 1100px;
   }
 }
+
+
+@media screen and (min-width: 1024px) and (max-width: 1100px) {
+  .container { 
+    width: 1024px;
+  }
+}
+
+
